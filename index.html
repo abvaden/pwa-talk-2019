@@ -1,0 +1,817 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="slide"
+						data-background-position="bottom"
+						data-background-transition="slide">
+					<h1>Adam Vaden</h1>
+					<img src="images/v2tools-logo.png" class="stretch" style="background: transparent; border: none; box-shadow: none;">
+					<h5><a href="https://v2tools.com">V2Tools.com</a></h5>
+				</section>
+
+				<section data-transition="slide">
+					<h3>Progressive Web App (PWA)</h3>
+					<p class="fragment">What?</p>
+					<p class="fragment">Why?</p>
+					<p class="fragment">How?</p>
+				</section>
+
+				<section data-transition="slide">
+					<p highlight-blue>&lt;/intro&gt;</p>
+				</section>
+
+				<!-- What -->
+				<section data-transition="slide">
+					<section>
+						&lt;what&gt;
+					</section>
+
+
+					<section>
+						<h3><a href="https://ionicframework.com/docs/v3/developer-resources/progressive-web-apps/">Ionic</a></h3>
+						<ol>
+							<li class="fragment">Progressive</li>
+							<li class="fragment">Responsive</li>
+							<li class="fragment">Connectivity Independent</li>
+							<li class="fragment">App-Like</li>
+							<li class="fragment">Fresh</li>
+							<li class="fragment">Discoverable</li>
+							<li class="fragment">Re-engageable</li>
+							<li class="fragment">Installable</li>
+							<li class="fragment">Linkable</li>
+						</ol>
+					</section>
+
+					<section>
+						<h3><a href="https://blog.bitsrc.io/what-is-a-pwa-and-why-should-you-care-388afb6c0bad">BitSrc</a></h3>
+						<ol>
+							<li class="fragment">Reliable</li>
+							<li class="fragment">Fast</li>
+							<li class="fragment">Responsive</li>
+							<li class="fragment">Installable</li>
+							<li class="fragment">Splash Screen</li>
+							<li class="fragment">Highly engage-able</li>
+						</ol>
+					</section>
+
+					<section data-background-transition="slide"
+							data-transition="slide">
+						<h3><a href="https://developers.google.com/web/progressive-web-apps/">Google</a></h3>
+						<ol>
+							<li class="fragment highlight-current-blue">Reliable</li>
+							<li class="fragment highlight-current-blue">Fast</li>
+							<li class="fragment highlight-current-blue">Engaging</li>
+							<li class="fragment"><a>See Lighthouse</a></li>
+						</ol>
+					</section>
+
+					<section data-background-image="images/pwa-lighthouse-1.png" data-background-transition="none">
+					</section>
+					<section data-background-image="images/pwa-lighthouse-2.png" data-background-transition="none">
+					</section>
+
+					<section data-transition="fade">
+						<h3>PWA</h3>
+						<p class="fade-in-then-out">Progressive Web App</p>
+						<p class="fragment"><strike>Progressive Web App</strike></p>
+						<p class="fragment text-blue">Progressive Web Experience</p>
+					</section>
+
+					<section data-transition="slide">
+						<h3>Progressive Web Experience</h3>
+						<p class="fragment">native-like</p>
+					</section>
+
+					<section data-transition="slide">
+						<aside class="notes">
+							<ul>
+								<li>Stop having the conversation about web vs desktop/mobile apps</li>
+								<li>Focus on the business case</li>
+								<li>Optimize the user experience to meet those business needs our business needs</li>
+							</ul>
+						<aside>
+						<h3>NATIVE-LIKE ?</h3>
+					</section>
+					
+					<section>
+						<aside class="notes">
+							<p>
+								Alex Russell in 2015 
+								Progressive Web Apps:
+								Escaping Tabs Without Losing Our Soul
+								mentions things like 
+								<ul>
+									<li>Adobe AIR Applications</li>
+									<li>PhoneGap apps</li>
+									<li>Chrome Packaged Applications</li>
+									<li>Electron - just starting out</li>
+								</ul>
+							</p>
+							<p>
+								Go over all the points made in the what part and explain how they relate to what
+								to the gif
+							</p>
+						</aside>
+						<img src="images/1_DYjPm6A9VuxueEU7mD_lPQ.gif" class="stretch"/>
+						<br />
+						<a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">Alex Russell</a>
+					</section>
+
+					<section>
+						&lt;/what&gt;
+					</section>
+				</section>
+
+				<!-- Why -->
+				<section>
+					<section>&lt;why&gt;</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>3G</li>
+							</ul>
+
+						</aside>
+						<h5>Load Time <i class="fas fa-stopwatch"></i> </h5>
+						<span><p>Most web apps take 15 - 16s to load</p></span>
+					</section>
+
+					<section data-background-transition="slide"
+							data-background-image="images/page_speed_infographic_1.png"
+							data-background-size="contain">
+							<aside class="notes">
+								https://www.section.io/blog/page-load-time-bounce-rate/
+							</aside>
+					</section>
+					<section data-background-transition="slide"
+							data-background-image="images/page_speed_infographic_2.png"
+							data-background-size="contain">
+							<aside class="notes">
+								https://www.section.io/blog/page-load-time-bounce-rate/
+							</aside>
+					</section>
+					<section data-background-transition="slide"
+							data-background-image="images/page_speed_infographic_3.png"
+							data-background-size="contain">
+							<aside class="notes">
+								https://www.section.io/blog/page-load-time-bounce-rate/
+							</aside>
+					</section>
+
+
+					<section>
+						<h5>Mobile First  <i class="fas fa-mobile-alt"></i> </h5>
+						<span><p>Mobile web continues to be increasingly important to reach users</p></span>
+					</section>
+
+					<section>
+						<aside class="notes">
+							http://gs.statcounter.com/platform-market-share/desktop-mobile-tablet
+						</aside>
+						<p>Mobile &gt; 50% usage in 2017</p>
+						<img src="images/stat-counter-desktop-vs-mobile.png"/>
+					</section>
+
+					<section data-transition="fade">
+						<aside class="notes">
+							<ul>
+								<li>Not only in emerging markets</li>
+								<li>Mobile only markets tend to have limited data plans, BIGG APPS</li>
+								<li>Slow connections 3G</li>
+								<li>Slow devices</li>
+							</ul>
+							https://www.comscore.com/Insights/Presentations-and-Whitepapers/2017/The-Global-Mobile-Report
+						</aside>
+						<h3>70% mobile active</h3>
+						<img src="images/comscore-2017-report.png"/>
+					</section>
+					<section data-transition="fade">
+						<aside class="notes">
+							<ul>
+								<li>2% growth in US for the 2016 -> 2017 year and growing</li>
+							</ul>
+							https://www.comscore.com/Insights/Presentations-and-Whitepapers/2017/The-Global-Mobile-Report
+						</aside>
+						<h3>12% + mobile only</h3>
+						<img src="images/comscore-2017-report.png"/>
+					</section>
+
+					<section>
+						<aside class="notes">
+							According to google study
+							<br />
+							Facebook, instagram, TWITTER do you open the website or app
+						</aside>
+						<p>~ <b>80%</b> of time on mobile is spent in 3 apps</p>
+					</section>
+
+
+					<section>
+						<h5>INDUSTRY SUPPORT ?</h5>
+					</section>
+
+					<section>
+						<h5>Google</h5> 
+						<ol>
+							<li class="fragment">Primary proponents</li>
+							<li class="fragment">Multiple talks per year at I/O</li>
+							<li class="fragment">Maintain the Lighthouse project</li>
+							<li class="fragment">Tons of resources to get you started</li>
+						</ol>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Safarri red headed step child</li>
+								<li>Apple was first when iphone was first released</li>
+								<li>Apple has been lagging behind in support, doesn't preclude this from working on iOS though</li>
+							</ul>
+						</aside>
+						<h5>Apple</h5> 
+						<ol>
+							<li class="fragment">First on the scene</li>
+							<li class="fragment">Part of Jobs vision for the iPhone</li>
+							<li class="fragment">Slowly integrated into iOS</li>
+						</ol>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Twitter - 75% increase in tweets sent</li>
+								<li>Uber - 50kb gzip</li>
+								<li>Android Messages - </li>
+								<li>Forbes - 100% increase in engagement rates</li>
+								<li>Pintrest - 44% increase in user generated add revenue</li>
+								<li>Lancôme - 17% increase in conversion, special interest in iOs since 65% of users are from iPhone, 53% increase in iOs sessions</li>
+								<li>Instagram - Windows store integration</li>
+								<li>WhatsApp - Windows store integration</li>
+							</ul>
+						</aside>
+						<h2>Big Name Tech</h2>
+						<div class="double-column-layout">
+							<div>
+								<ul>
+									<li class="fragment"><a href="https://developers.google.com/web/showcase/2017/twitter">Twitter</a></li>
+									<li class="fragment"><a href="https://eng.uber.com/m-uber/">Uber</a></li>
+									<li class="fragment"><a href="https://eng.uber.com/m-uber/">Android Messages</a></li>
+									<li class="fragment"><a href="https://www.pubexec.com/article/forbes-progressive-web-app-supercharged-mobile-engagement-revenue/">Forbes</a></li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li class="fragment"><a href="https://go.divante.co/top-30-progressive-web-apps/">Pintrest</a></li>
+									<li class="fragment"><a href="https://developers.google.com/web/showcase/2017/lancome">Lancôme</a></li>
+									<li class="fragment">Instagram</li>
+									<li class="fragment">WhatsApp</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<p>First point of engagement to interactive time</p>
+
+							<p>
+								Native app, go to app store, download, install, oh wait flappy bird, go to home screen and click
+							</p>
+
+							<p>PWA see link, click opens your experience in browser immediately.
+							After the user has been there for a while prompt for install</p>
+						</aside>
+						<h5>BARRIER TO ENTRY</h5>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ol>
+								<li>decreases bounce rate</li>
+								<li>reach more users</li>
+								<li>major advances from browsers allow for new things</li>
+							</ol>
+						</aside>
+						<h3>Why ?</h3>
+						<ol>
+							<li class="fragment">Reduced load time</li>
+							<li class="fragment">Mobile trending market</li>
+							<li class="fragment">Industry support</li>
+						</ol>
+					</section>
+
+					<section>&lt;/why&gt;</section>
+				</section>
+
+				<!-- How -->
+				<section>
+					<section>
+						&lt;how&gt;
+					</section>
+
+					<!-- Choose what matters to you -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Every experience is different</li>
+								<li>Decide what features are critical</li>
+								<li>Find metrics that matter most</li>
+							</ul>
+						</aside>
+						<p>How to progressive web experience?</p>
+						<p class="fragment text-blue">Choose what matters the most to you</p>
+					</section>
+
+					<!-- Requirements -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Does your app need offline support? Or are you showing only the latests stock price</li>
+								<li>Does your app need offline support? Or are you showing only the latests stock price</li>
+							</ul>
+						</aside>
+
+						<h2>Requirements</h2>
+						<ol>
+							<li>Offline?</li>
+							<li>Home screen presence</li>
+							<li>Native Notifications</li>
+							<li>Device integrations</li>
+						</ol>
+					</section>
+					
+					<!-- Metrics -->
+					<section>
+						<aside class="notes">
+							<ol>
+								<li>How long does it take for your app to show content</li>
+								<li>How long till users can click on your app and have engagement</li>
+								<li>How big are the assets that are required to load your app</li>
+								<li>Maximum bundle size (main thread)</li>
+								<li>How efficient is your cache usage, will your new release invalidate the entire cache?</li>
+							</ol>
+						</aside>
+						<h2>Metrics</h2>
+						<ol>
+							<li class="fragment">Optimize Time to First Meaningful Paint (FMP)</li>
+							<li class="fragment">Time to Interactive</li>
+							<li class="fragment">Entry bundle size</li>
+							<li class="fragment">Maximum bundle size</li>
+							<li class="fragment">Cache efficiency</li>
+						</ol>
+					</section>
+
+					<!-- Service Worker 1 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Programable network proxy</li>
+								<li>A type of web worker</li>
+								<li>HTTPS to prevent tampering</li>
+								<li>Good browser support</li>
+							</ul>
+						</aside>
+						<h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker</a></h2>
+						<ol>
+							<li class="fragment" data-fragment-index="0">Programmable network proxy</li>
+							<li class="fragment" data-fragment-index="1">Must be HTTPS</li>
+							<li class="fragment" data-fragment-index="2">Lifetime controlled by browser</li>
+							<li class="fragment" data-fragment-index="3"><a href="https://caniuse.com/#feat=serviceworkers">Good support - caniuse.com</a></li>
+						</ol>
+
+						<img class="fragment" data-fragment-index="3" src="images/can-i-use-it-service-worker.png">
+					</section>
+
+					<!-- Service Worker 2 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>A type of web worker</li>
+							</ul>
+						</aside>
+						<h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker</a></h2>
+						<pre style="font-size: 1rem;" class="fragment">
+							<code class="plaintext">
+if ('serviceWorker' in navigator) {
+  navigator
+  .serviceWorker
+  .register('/service-worker.js')
+  .then(function(registration) {
+    console.log('Registration successful, scope is:', registration.scope);
+  })
+  .catch(function(error) {
+    console.log('Service worker registration failed, error:', error);
+  });
+}
+							</code>
+						</pre>
+					</section>
+
+					<!-- Service Worker 3 -->
+					<section>
+						<aside class="notes">
+							<ol>
+								<li>Install event</li>
+								<li>Idle while old service workers are being used, can be skipped</li>
+								<li>Activate event, do rest of setup work (caches)</li>
+								<li>Installed and ready to respond to events</li>
+								<li>service worker is being replaced by another one</li>
+							</ol>
+						</aside>
+						<h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker</a> Lifecycle</h2>
+						<ol>
+							<li class="fragment">Installing</li>
+							<li class="fragment"><span>Installed / Waiting</span></li>
+							<li class="fragment">Activating</li>
+							<li class="fragment">Activated</li>
+							<li class="fragment">Redundant</li>
+							<li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers">Info</a></li>
+						</ol>
+					</section>
+
+					<!-- Service Worker 4 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Respond to events</li>
+								<li>fetch, sync, push -> functional events </li>
+							</ul>
+						</aside>
+						<h2>Service Worker</h2>
+						<pre style="font-size: 1rem;" class="fragment">
+							<code class="js">
+// events: 'install', 'activate', 'message', 'fetch', 'push', 'sync' 
+
+self.addEventListener('install', function(event) {
+  // postMessage() telling application that new version of service worker is 
+  // available
+});
+
+self.addEventListener('activate', function(event) {
+  // Prepare environment for service worker, clean old caches, 
+  // prefetch new resources, warm stale caches
+});
+
+self.addEventListener('fetch', function(event) {
+  if (event.url.contains('meaning-of-life')) {
+    event.respondWith(new Response('42'));
+  } else {
+    event.respondWith(new Response('Try googling it'));
+  }
+});
+							</code>
+						</pre>
+					</section>
+
+					<!-- App Shell 1 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>separate application content</li>
+								<li>benefits align with PWE</li>
+							</ul>
+						</aside>
+						<h2><a href="https://developers.google.com/web/fundamentals/architecture/app-shell">App Shell Architecture</a></h2>
+						<ol>
+							<li class="fragment" data-fragment-index="0">Load fast</li>
+							<li class="fragment" data-fragment-index="0">Use as little data as possible</li>
+							<li class="fragment" data-fragment-index="0">Use static assets from a local cache</li>
+							<li class="fragment" data-fragment-index="0">Separate content from navigation</li>
+							<li class="fragment" data-fragment-index="0">Retrieve and display page-specific content</li>
+							<li class="fragment" data-fragment-index="0">Optionally, cache dynamic content</li>
+						</ol>
+					</section>
+
+					<!-- App Shell 2 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>separate application content</li>
+								<li>Jake Archibald offline wikipedia app</li>
+								<li>Pintrest example of full page reload on app shell update - long cache app shell</li>
+							</ul>
+						</aside>
+						<h2><a href="https://wiki-offline.jakearchibald.com/wiki/Rick_and_Morty">App Shell Example</a></h2>
+						<img src="images/app-shell-example.png">
+					</section>
+
+					<!-- PRPL pattern 1 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Addy Osmani</li>
+								<li>Push critical resources for the initial URL route.</li>
+								<li>Render initial route - Time To First Paint</li>
+								<li>Pre-cache remaining routes - Pre cache remaing resources - Guess.js</li>
+								<li>Lazy-load and create remaining routes on demand.</li>
+							</ul>
+						</aside>
+						<h5><a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL Pattern</a></h5>
+						<ul>
+							<li class="fragment">Push</li>
+							<li class="fragment">Render</li>
+							<li class="fragment">Pre-cache</li>
+							<li class="fragment">Lazy-load</li>
+						</ul>
+					</section>
+
+					<!-- Guess.Js -->
+					<section>
+						<aside class="notes">
+							<p>AI for code loading</p>
+							<p>Integrates with webpack</p>
+							<p>Integrates with common frameworks, Angular</p>
+						</aside>
+						<h2><a href="https://github.com/guess-js/guess">GUESS.JS</a></h2>
+						<p>AI for content perfecting.</p>
+
+						<div class="double-column-layout fragment">
+							<div>
+								<a href="https://github.com/mgechev/guess-js-react-demo">React</a>
+							</div>
+							<div>
+								<a href="https://github.com/mgechev/guess-js-angular-demo">Angular</a>
+							</div>
+						</div>
+					</section>
+
+					<!-- HTTP/2 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li> How it works - stream multiplexing</li>
+								<li> HTTP/1.1 1.57(s) HTTP/2 0.4(s)</li>
+								<li> HTTP/1.1 multiple connections parallel download</li>
+								<li> HTTP/2 Server knows what assets are needed pushes all assets to client on initial connection</li>
+								<li>If not HTTP/2 then link rel=preload</li>
+							</ul>
+						</aside>
+						<h5><a href="https://developers.google.com/web/fundamentals/performance/http2/">HTTP/2 </a></h5>
+						<span class="fragment" >
+							<video loop autoplay data-autoplay src="images/vokoscreen-2019-04-23_13-15-02.mp4" type="video/mp4">
+							</video>
+							<a href="http://www.http2demo.io/">http2demo.io</a>
+						</span>
+					</section>	
+
+					<!-- CDN -->
+					<section>
+						<aside class="notes">
+							<p>Used to a deploy model where you deploy a web server and serve requests</p>
+							<p>More economical</p>
+							<p>Faster Time to first byte</p>
+						</aside>
+						<h2>CDN</h2>
+						<div class="double-column-layout fragment">
+							<div>
+								<a href="https://aws.amazon.com/cloudfront/">AWS - CloudFront</a>
+								<img src="https://d1.awsstatic.com/global-infrastructure/maps/CloudFront%20Network%20Map%2004.08.19.75a2ae4b0168b9c32dabf0381a47fe0fc8c40ca7.png">
+							</div>
+							<div>
+								<a href="https://azure.microsoft.com/en-us/services/cdn/">Azure CDN</a>
+								<img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be451c1e-0add-4ad5-8e91-ebdad2e93dc6.png">
+							</div>
+						</div>
+					</section>
+
+					<!-- Workbox 1 -->
+					<section>
+						<aside class="notes">
+							<p>2 hardest things</p>
+							<p>Integrates with your build pipeline, webpack, cli, or standalone node moredule</p>
+						</aside>
+						<h2><a href="https://developers.google.com/web/tools/workbox/">Workbox</a></h2>
+						<p class="fragment">Caching made easy</p>
+						<p class="fragment">WebPack plugin for precaching</p>
+					</section>
+
+					<!-- Workbox 2 -->
+					<section>
+						<aside class="notes">
+							<p>Tons of great modules</p>
+						</aside>
+						<h2><a href="https://developers.google.com/web/tools/workbox/">Workbox</a></h2>
+						<div class="fragment double-column-layout">
+							<div>
+								<ul>
+									<li>core</li>
+									<li>precaching</li>
+									<li>routing</li>
+									<li>strategies</li>
+									<li>expiration</li>
+									<li>backgroundSync</li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li>googleAnalytics</li>
+									<li>cacheableResponse</li>
+									<li>broadcastUpdate</li>
+									<li>rangeRequest</li>
+									<li>Streams</li>
+									<li>navigationPreload</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- Progressive jpeg -->
+					<section>
+						<aside class="notes">
+							<p>Works well with larger assets</p>
+							<p>hinders small images</p>
+						</aside>
+						<h2><a href="https://www.liquidweb.com/kb/what-is-a-progressive-jpeg/">Progressive jpeg</a></h2>
+						<div class="double-row-layout">
+							<div>
+								<p>Standard</p>
+								<img src="images/sleepy-purrito-baseline-timeline-768x275.jpeg" />
+							</div>
+							<div>
+								<p>Progressive</p>
+								<img src="images/sleepy-purrito-progressive-timeline-768x275.jpeg" />
+							</div>
+						</div>
+					</section>
+
+					<!-- Code splitting 1 -->
+					<section>
+						<aside class="notes">
+							<p>built into tools</p>
+							<p>
+								route based
+								<ul>
+									<li>Duplicates code but loads only what is needed for a given page</li>
+								</ul>
+							</p>
+							
+						</aside>
+						<h2>Code Splitting</h2>
+						<ol>
+							<li class="fragment">Route level</li>
+							<li class="fragment"><span>index.js / vendor</span></li>
+						</ol>
+					</section>
+					
+					<!-- Webpack performance metrics 1 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>out of the box best practices</li>
+								<li>simple base line configuration</li>
+							</ul>
+						</aside>
+						<h3>Webpack Performance Metrics</h3>
+						<img src="images/90d6681e-9f3a-11e6-8e0a-be9f2742483a.png">
+					</section>
+
+					<!-- Webpack performance metrics 2 -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Sample configuration</li>
+							</ul>
+						</aside>
+						<h3><a href="https://webpack.js.org/configuration/performance/">Webpack Performance Metrics</a></h3>
+						<pre>
+							<code class="javascript">
+module.exports = {
+  performance: {
+    hints: 'warning',
+    // How large can index.js be (bytes)
+    maxEntrypointSize: 400000,
+    // How large can any single asset be (bytes)
+    maxAssetSize: 100000,
+    // Do analysis only only specified files
+    assetFilter: function(assetFilename) {
+	  return assetFilename.endsWith('.js') || 
+	  assetFilename.endsWith('.jsx') ||
+	  assetFilename.endsWith('.vue');
+    }
+  }
+};
+							</code>
+						</pre>
+					</section>
+
+					<!-- Bundle analysis -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>out of the box best practices</li>
+								<li>simple base line configuration</li>
+							</ul>
+						</aside>
+						<h2><a href="https://www.npmjs.com/package/webpack-bundle-analyzer">Webpack Bundle Analyzer</a></h2>
+						<img src="images/93f72404-b338-11e6-92d4-9a365550a701.gif">
+					</section>
+
+					<!-- Add to home screen -->
+					<section>
+						<aside class="notes">
+							<p>
+								short_name / Name, icons (192, 512px), start_url, display (fullscreen )
+							</p>
+						</aside>
+						<h3><a href="https://developers.google.com/web/fundamentals/app-install-banners/">Add to home screen</a></h5>
+						<ol>
+							<li class="fragment">Engagement heuristic</li>
+							<li class="fragment">Web app manifest</li>
+							<li class="fragment">HTTPS</li>
+							<li class="fragment">Service Worker</li>
+						</ol>
+					</section>
+
+					<!-- Windows store integration -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Standard add to home screen</li>
+								<li>Windows dev center - see link </li>
+							</ul>
+						</aside>
+						<h3><a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/microsoft-store">Microsoft Store</a></h3>
+						<ul>
+							<li>Automatic index by Bing</li>
+							<li>Manual submission</li>
+						</ul>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ol>
+								<li>PWA Builder</li>
+								<li>app manifest generator firebase</li>
+							</ol>
+						</aside>
+						<h3><a class="fragment" href="https://www.pwabuilder.com/">PWA Builder</a></h3>
+						<h3><a class="fragment" href="https://app-manifest.firebaseapp.com/">Manifest Generator</a></h3>
+					</section>
+
+					<section>
+						&lt;/how&gt;
+					</section>
+				</section>
+
+				<section data-transition="slide"
+						data-background-position="bottom"
+						data-background-transition="slide">
+					<h1>Adam Vaden</h1>
+					<img src="images/v2tools-logo.png" class="stretch" style="background: transparent; border: none; box-shadow: none;">
+					<h5><a href="https://v2tools.com">V2Tools.com</a></h5>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					//{ src: 'socket.io/socket.io.js', async: true },
+					//{ src: 'plugin/notes-server/client.js', async: true }
+				],
+				// Add the current slide number to the URL hash so that reloading the
+				// page/copying the URL will return you to the same slide
+				hash: true,
+				// Flags whether to include the current fragment in the URL,
+				// so that reloading brings you to the same fragment position
+				fragmentInURL: true,
+				autoPlayMedia: true
+			});
+		</script>
+	</body>
+</html>

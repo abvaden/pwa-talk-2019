@@ -1,0 +1,20 @@
+.text-blue {
+    color: #42affa;
+}
+
+.double-column-layout {
+    display: flex;
+}
+
+.double-column-layout div{
+    flex: 50;
+}
+
+.double-row-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.double-row-layout div{
+    flex: 50;
+}
